@@ -1,1 +1,4 @@
-*Actividad
+# Actividad
+Vulnerabilidad | Origen (diseño / implementación / uso) | Amenaza que la explota | Física / Lógica | C-I-D afectada
+-------------- | -------------------------------------- | ---------------------- | --------------- | --------------
+Servidor de impresion portatil | diseño | cualquiera se lo puede llevar | fisica | Confidencialidad
