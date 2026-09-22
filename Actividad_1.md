@@ -11,10 +11,10 @@
 | Impresoras accesibles | diseño | manipulación o sabotaje | física | Integridad, Disponibilidad |
 | Pantallas visibles para otras personas | diseño | observación de información por terceros | física | Confidencialidad |
 | Ausencia de control de acceso visible | diseño | entrada de personas no autorizadas | física | Confidencialidad, Integridad y Disponibilidad |
-| Equipos sin bloqueo de sesión visible | uso | acceso a la información por una persona no autorizada | lógica | Confidencialidad, Integridad |
-| Contraseñas débiles o inexistentes | uso | acceso no autorizado a los equipos | lógica | Confidencialidad, Integridad |
+| Equipos sin bloqueo de sesión | uso | acceso a la información por una persona no autorizada | lógica | Confidencialidad, Integridad |
+| Contraseñas débiles | uso | acceso no autorizado a los equipos | lógica | Confidencialidad, Integridad |
 | Equipos sin antivirus o protección frente a malware | implementación | infección por malware | lógica | Integridad, Disponibilidad |
 | Falta de copias de seguridad de los planos y documentos | implementación | pérdida o eliminación de información | lógica | Disponibilidad |
-| Red inalámbrica sin seguridad visible | implementación | acceso no autorizado a la red | lógica | Confidencialidad, Integridad |
+| Red inalámbrica sin seguridad | implementación | acceso no autorizado a la red | lógica | Confidencialidad, Integridad |
 | Impresoras conectadas a la red sin control de acceso | implementación | uso o manipulación no autorizada de las impresoras | lógica | Integridad, Disponibilidad |
-| Información almacenada en los ordenadores sin cifrado visible | implementación | robo de información mediante acceso al almacenamiento | lógica | Confidencialidad |
+| Información almacenada en los ordenadores sin seguridad | implementación | robo de información mediante acceso al almacenamiento | lógica | Confidencialidad |
