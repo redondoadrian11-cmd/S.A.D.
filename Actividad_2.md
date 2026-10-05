@@ -1,1 +1,12 @@
-
+| Elemento de Estudio Torrent | Nivel (1-5) | Justificación |
+| :--- | :---: | :--- |
+| **1. El catálogo de servicios publicado en la web del estudio** | 1 | Es información asimilable a un catálogo de productos que puede ser conocida por cualquier persona sin que su uso fraudulento suponga un riesgo para la empresa. |
+| **2. Un correo interno entre los socios sobre el calendario de vacaciones** | 2 | Corresponde a un correo electrónico rutinario y documento de trabajo interno cuya filtración supondría un riesgo poco significativo. |
+| **3. Las facturas emitidas a los clientes** | 3 | Al contener datos económicos y personales, es información que solo debe conocer un grupo reducido (departamento de administración) y cuyo uso fraudulento tendría un impacto significativo. |
+| **4. La contraseña de acceso al ERP** | 5 | Actúa como una clave criptográfica de acceso crítico al sistema, por lo que su revelación no autorizada causaría un perjuicio excepcionalmente grave a la organización. |
+| **5. Los planos de la vivienda de un cliente, guardados en el disco compartido** | 3 | Es información sensible ligada a un proyecto que solo debería manejar el equipo asignado, por lo que su exposición supondría un impacto significativo para los intereses del estudio. |
+| **6. El informe de auditoría de vulnerabilidades hecho con Nessus** | 3 | Los informes de auditoría están expresamente catalogados en este nivel, ya que exponen detalles técnicos que solo debe conocer un grupo reducido para evitar consecuencias significativas. |
+| **7. Una conversación entre los tres socios sobre si aceptan o no una oferta de compra del estudio** | 5 | La política estipula claramente que la información sobre fusiones o adquisiciones debe catalogarse así, pues su revelación prematura causaría un perjuicio excepcionalmente grave. |
+| **8. El PDF con las tarifas estándar de los servicios del estudio** | 1 | Al igual que la información de la página web, es documentación de índole puramente comercial diseñada para ser pública y cuya circulación externa no supone un riesgo. |
+| **9. Las notas de un socio explicando por qué han perdido un cliente frente a la competencia** | 4 | Son comunicaciones sobre decisiones o estrategias relevantes que únicamente debe conocer su propietario directo (el socio), y su divulgación externa supondría graves perjuicios competitivos. |
+| **10. El registro de qué hora entra cada socio a trabajar** | 2 | Se trata de un simple dato de control horario utilizado por las áreas administrativas, por lo que el daño derivado de una fuga sería mínimo o poco significativo. |
