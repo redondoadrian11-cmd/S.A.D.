@@ -4,7 +4,7 @@
 | Uso de Ubuntu 8.04 y Windows 7 | 2 | Sistemas operativos desactualizados y sin soporte que permiten explotar vulnerabilidades conocidas | Actualizar los sistemas operativos a Windows 11 o Ubuntu 22 | 
 | Registro SPF configurado como +all | 4 | Es permitido que cualquier IP de internet a enviar correos en nombre del dominio. Permite suplantación de identidad (spoofing) | Corregir el registro SPF usando -all o con las IPs legítimas | 
 | Ausencia de DKIM y DMARC | 4 | No hay firma criptográfica ni política de rechazo para correos no verificados | Implementar y configurar correctamente registros DKIM y DMARC | 
-| Mensaje de "Fuera de la oficina" detallado | 6 | Revela el contacto de quien maneja los pagos y una urgencia. Ideal para un ataque de fraude de la CEO | Redactar mensajes automáticos genéricos sin revelar roles internos ni procesos de pago | 
+| Mensaje de "Fuera de la oficina" detallado | 6 | Revela el contacto de quien maneja los pagos y una urgencia. Ideal para un ataque de fraude de la socia | Redactar mensajes automáticos genéricos sin revelar roles internos ni procesos de pago | 
 | Subdominios internos públicos | 4 | Expone infraestructura crítica directamente a internet, facilitando ataques directos | Ocultar estos recursos detrás de una VPN; eliminar registros DNS públicos de servicios internos | 
 | Nota adhesiva en el monitor | 5 | Un atacante puede ampliar la imagen y obtener credenciales | Aplicar política de mesas limpias y usar gestores de contraseñas | 
 | Teletrabajo en red WiFi pública | 5 | Al usar una WiFi de cafetería, el tráfico puede ser interceptado (Man-in-the-Middle) para robar credenciales. | Obligar al uso de VPN corporativa siempre que se trabaje fuera de la oficina | 
