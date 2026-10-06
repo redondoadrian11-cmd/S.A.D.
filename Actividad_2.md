@@ -8,9 +8,9 @@
 | Subdominios internos públicos | 4 | Expone infraestructura crítica directamente a internet, facilitando ataques directos | Ocultar estos recursos detrás de una VPN; eliminar registros DNS públicos de servicios internos | 
 | Nota adhesiva en el monitor | 5 | Un atacante puede ampliar la imagen y obtener credenciales | Aplicar política de mesas limpias y usar gestores de contraseñas | 
 | Teletrabajo en red WiFi pública | 5 | Al usar una WiFi de cafetería, el tráfico puede ser interceptado (Man-in-the-Middle) para robar credenciales. | Obligar al uso de VPN corporativa siempre que se trabaje fuera de la oficina | 
-| CMS desactualizado | 1 | Un software web sin actualizar es altamente vulnerable a inyecciones SQL | Mantener el CMS y sus plugins actualizados a la última versión | 
+| CMS desactualizado | 3 | Un software web sin actualizar es altamente vulnerable a inyecciones SQL | Mantener el CMS y sus plugins actualizados a la última versión | 
 | Datos personales en el WHOIS | 3 | Expone el móvil y correo personal de Marta, siendo objetivo de phishing personal o ingeniería social | Activar la protección de privacidad en el registrador de dominios | 
-| Información de roles en la web | 1 | Permite perfilar a los empleados para correos maliciosos | Formación en concienciación de seguridad para los empleados | 
+| Información de roles en la web | 2 | Permite perfilar a los empleados para correos maliciosos | Formación en concienciación de seguridad para los empleados | 
 
 **Paso 2.** Con lo que habéis encontrado, escribid en **5 líneas como máximo** el plan de ataque que montaríais contra Estudio Torrent.
 
