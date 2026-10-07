@@ -25,4 +25,14 @@ El escaneo ha identificado un total de 70 vulnerabilidades agrupadas. Destacan m
 | **SSL** (Detección de servicios) | Baja / 2,6 | Uso | El servicio está configurado para aceptar de cifrado "anónimas" en SSL. |
 
 ## 5. Análisis en profundidad
-(El desarrollo del paso 8: qué es, cómo se explota, cómo se mitiga, referencia)
+La vulnerabilidad crítica detectada "Gain a shell remotely"
+ - Qué es —  El servidor VNC utiliza una contraseña débil.
+ - Cómo se podría explotar — Permite a un atacante conectarse directamente a la máquina con un cliente estándar y tomar el control total del sistema.
+ - Cómo se mitigaría — Para solucionar este riesgo, se debe cambiar inmediatamente las contraseñas por unas mas robustas, además de bloquear la exposición pública del puerto mediante un cortafuegos o tener conexión a través de un túnel cifrado.
+ - Referencia — Plugin ID 26925.
+
+## 6. Recomendaciones
+Para asegurar el sistema, es fundamental reemplazar inmediatamente cualquier contraseña débil o por defecto por credenciales robustas. Asimismo, se deben eliminar los protocolos obsoletos que transmiten en texto claro (como rlogin o Telnet) a favor de alternativas cifradas como SSH, y minimizar la exposición de la red cerrando puertos innecesarios y aplicando políticas de firewall estrictas.
+
+## 7. Conclusión
+El sistema auditado presenta un estado crítico de vulnerabilidad que facilita su compromiso inminente, por lo que no firmaria un contrato de mantenimiento.
