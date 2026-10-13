@@ -32,7 +32,7 @@ Clasificación del malware
 
 ● **Parásito Informático**: Término genérico para cualquier software malicioso que depende de un sistema o programa anfitrión para sobrevivir o consumir sus recursos.
 
-● **Pharming**: Ataque que redirige el tráfico de un sitio web legítimo hacia uno falso (alterando los DNS), con el fin de robar credenciales 
+● **Pharming**: Ataque que redirige el tráfico de un sitio web legítimo hacia uno falso, con el fin de robar credenciales 
 
 ● **Phishing**: Técnica de engaño donde el atacante se hace pasar por una entidad de confianza mediante correos o mensajes para que la víctima revele datos confidenciales 
 
