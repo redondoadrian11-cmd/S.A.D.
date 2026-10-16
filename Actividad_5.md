@@ -64,7 +64,7 @@ Clasificación del malware
 | 8 | Un conjunto de programas modificados que esconde procesos y ficheros del intruso dentro del propio sistema | Rootkit | No | Si |
 | 9 | Un servicio escuchando en un puerto que permite entrar al equipo sin contraseña | Backdoor | No | No |
 | 10 | Correo: "Tu banco necesita que confirmes tus datos en este enlace" | Phishing | No | Si |
-| 11 | Mensaje: "Reenvía esto a 10 contactos o tu cuenta se cerrará" | Bulo) | No | Si |
+| 11 | Mensaje: "Reenvía esto a 10 contactos o tu cuenta se cerrará" | Bulo | No | Si |
 | 12 | Una web idéntica a la del ERP a la que se llega porque el DNS ha sido manipulado | Pharming | No | No |
 | 13 | Un programa que registra sin permiso los hábitos de navegación y los vende | Spyware | No | Si |
 
