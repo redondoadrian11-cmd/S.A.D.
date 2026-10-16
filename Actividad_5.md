@@ -52,3 +52,25 @@ Clasificación del malware
 
 ● **Worms o gusanos**: Malware independiente que se replica y propaga automáticamente a través de las redes infectando otros equipos, sin necesidad de un archivo anfitrión ni intervención humana 
 
+| # | Incidente | Tipo de amenaza | ¿Se replica solo? | ¿Necesita al usuario? |
+|---|---|---|---|---|
+| 1 | Un socio abre factura_marzo.pdf.exe; poco después todo el disco compartido está cifrado y aparece un mensaje pidiendo 800 € | Ransomware | No | Si |
+| 2 | Un "optimizador gratuito" de PC que, además, envía todo lo que se teclea a un servidor externo | Keylogger | No | Si |
+| 3 | Sin que nadie haga nada, un programa salta de portátil en portátil a través de la wifi del estudio | Gusano | Si | No |
+| 4 | Al abrir ciertos ejecutables, éstos infectan a su vez a otros ficheros del equipo | Virus | Si | Si |
+| 5 | Tras instalar un editor de PDF gratuito, aparecen ventanas de publicidad constantemente | Adware | No | Si |
+| 6 | Un antiguo colaborador dejó un código que borrará los planos el 31 de diciembre | Bomba lógica | No | No |
+| 7 | El ordenador del estudio está enviando spam sin que nadie lo sepa, bajo las órdenes de un servidor externo | Bot/zombi | No | No |
+| 8 | Un conjunto de programas modificados que esconde procesos y ficheros del intruso dentro del propio sistema | Rootkit | No | Si |
+| 9 | Un servicio escuchando en un puerto que permite entrar al equipo sin contraseña | Backdoor | No | No |
+| 10 | Correo: "Tu banco necesita que confirmes tus datos en este enlace" | Phishing | No | Si |
+| 11 | Mensaje: "Reenvía esto a 10 contactos o tu cuenta se cerrará" | Hoax (bulo) | No | Si |
+| 12 | Una web idéntica a la del ERP a la que se llega porque el DNS ha sido manipulado | Pharming | No | No |
+| 13 | Un programa que registra sin permiso los hábitos de navegación y los vende | Spyware | No | Si |
+
+ ¿Cuáles de estos incidentes no son "malware" propiamente dicho, sino fraude o ingeniería social? ¿Por qué un antivirus no los detendría?
+
+Los incidentes que no son malware propiamente dicho son el **phishing**, el **bulo** y el **pharming**. El **phishing** es una técnica de engaño donde el atacante se hace pasar por una entidad de confianza mediante correos o mensajes para que la víctima revele datos confidenciales , el **bulo** son mensajes engañosos o cadenas falsas de correo que buscan crear alarma o desinformación, usando la ingeniería social en lugar de código malicioso, y el **pharming** es un ataque que redirige el tráfico de un sitio web legítimo hacia uno falso, con el fin de robar credenciales. 
+
+Un antivirus no siempre puede detener estas amenazas porque se basan en el engaño a la persona o usuario mediante la ingeniería social. Aunque puede bloquear enlaces peligrosos, no puede evitar todos los engaños ni impedir que una persona facilite voluntariamente sus datos.
+
