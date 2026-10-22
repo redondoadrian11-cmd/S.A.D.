@@ -1,4 +1,4 @@
-# Laboratorio fases 1 y 2 — Estudio Torrent
+# Laboratorio fases 1 y 2
 
 ## B. Antes y después
 
