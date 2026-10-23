@@ -9,7 +9,7 @@ En la medición Antes con Nmap, se detectaron múltiples puertos abiertos que no
 
 | Puerto | Servicio | Dueño | Cómo se arranca | Decisión | Lo que hice |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 23 | Telnet | xinetd | inetd.conf | Apagar | Comentar la línea con # en /etc/inetd.conf + sudo /etc/init.d/xinetd reload |
+| 23 | Telnet | xinetd | inetd.conf | Apagar | sudo /etc/init.d/xinetd reload |
 | 5432 | PostgreSQL | postgres | /etc/init.d/postgresql-8.3 | Apagar | sudo /etc/init.d/postgresql-8.3 stop + sudo update-rc.d -f postgresql-8.3 remove |
 | 139/445 | Samba | smbd | /etc/init.d/samba | Apagar | sudo /etc/init.d/samba stop + sudo update-rc.d -f samba remove |
 | 53 | DNS | bind9 | /etc/init.d/bind9 | Apagar | sudo /etc/init.d/bind9 stop + sudo update-rc.d -f bind9 remove |
