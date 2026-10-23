@@ -165,18 +165,9 @@ cat sospechoso.sh
 Análisis del fichero sospechoso.shh:
 
 1. ¿Qué crees que hace cada línea?
-   
-# Copia de sí mismo con un nombre "inocente"
-cp "$0" "$DIR/actualizador.sh" 2>/dev/null
 
-# Servicio web mínimo, solo accesible desde la propia máquina
-if ! ss -tln 2>/dev/null | grep -q ':8081 '; then
-  ( nohup python3 -m http.server 8081 --bind 127.0.0.1 --directory "$DIR" >/dev/null 2>&1 & )
-fi
+   Copia de sí mismo con un nombre "inocente", persistencia: se vuelve a lanzar al reiniciar (sin duplicar la entrada), acede a servicio web mínimo, solo accesible desde la propia máquina
 
-# Persistencia: se vuelve a lanzar al reiniciar (sin duplicar la entrada)
-LINEA="@reboot /bin/bash $DIR/actualizador.sh"
-( crontab -l 2>/dev/null | grep -vF "$DIR/actualizador.sh"; echo "$LINEA" ) | crontab -
 
 2. ¿Crea ficheros? ¿Abre puertos? ¿Modifica algo para sobrevivir a un reinicio?
    Sí, crea una carpeta y abre un puerto de red local 
