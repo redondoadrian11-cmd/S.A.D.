@@ -165,11 +165,21 @@ cat sospechoso.sh
 Análisis del fichero sospechoso.shh:
 
 1. ¿Qué crees que hace cada línea?
-   Realiza una copia de sí mismo dentro de esa carpeta oculta bajo un nombre de apariencia inocente (actualizador.sh).
-   Comprueba si hay un servicio escuchando en el puerto local 8081 y, si no está activo, levanta un servidor web mínimo en segundo plano usando Python enlazado exclusivamente a la interfaz de bucle local (127.0.0.1).
+   
+# Copia de sí mismo con un nombre "inocente"
+cp "$0" "$DIR/actualizador.sh" 2>/dev/null
+
+# Servicio web mínimo, solo accesible desde la propia máquina
+if ! ss -tln 2>/dev/null | grep -q ':8081 '; then
+  ( nohup python3 -m http.server 8081 --bind 127.0.0.1 --directory "$DIR" >/dev/null 2>&1 & )
+fi
+
+# Persistencia: se vuelve a lanzar al reiniciar (sin duplicar la entrada)
+LINEA="@reboot /bin/bash $DIR/actualizador.sh"
+( crontab -l 2>/dev/null | grep -vF "$DIR/actualizador.sh"; echo "$LINEA" ) | crontab -
 
 2. ¿Crea ficheros? ¿Abre puertos? ¿Modifica algo para sobrevivir a un reinicio?
-   Sí, crea una carpeta y un log en /tmp, abre un puerto de red local (8081) y modifica el cron del sistema para lograr persistencia tras el reinicio.
+   Sí, crea una carpeta y abre un puerto de red local 
 
 3. Si fuera un .exe binario, ¿qué habría que hacer en su lugar? 
    Al tratarse de un código compilado y no legible directamente mediante texto plano, sería obligatorio emplear herramientas de análisis estático
