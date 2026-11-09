@@ -9,15 +9,21 @@ sudo groupadd supervisores
 **Creamos los usuarios**
 
 sudo usermod -g operarios alberto
+
 sudo usermod -g operarios oscar
+
 sudo usermod -g operarios hugo
 
 sudo usermod -g ingenieria nestor
+
 sudo usermod -g ingenieria victor
+
 sudo usermod -g ingenieria lucia
 
 sudo usermod -g supervisores carlos
+
 sudo usermod -g supervisores mary
+
 sudo usermod -g supervisores john
 
 
