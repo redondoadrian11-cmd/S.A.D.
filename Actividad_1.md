@@ -1,10 +1,12 @@
-Creamos los grupos y los usuarios
+**Creamos los grupos**
 
 dpkg -s acl
 
 sudo groupadd operarios 
 sudo groupadd ingenieria 
 sudo groupadd supervisores 
+
+**Creamos los usuarios**
 
 sudo usermod -g operarios alberto
 sudo usermod -g operarios oscar
@@ -19,7 +21,7 @@ sudo usermod -g supervisores mary
 sudo usermod -g supervisores john
 
 
-Creamos los archivos
+**Creamos los archivos**
 
 touch hmi_planta 
 
@@ -29,7 +31,7 @@ mkdir -p planos
 
 touch planos/autoclave.dwg planos/caldera.dwg planos/destilacion.dwg 
 
-Damos los permisos
+**Damos los permisos**
 
 sudo chown root:ingenieria hmi_planta 
 sudo chmod 750 hmi_planta 
