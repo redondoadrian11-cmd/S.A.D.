@@ -1,9 +1,13 @@
-1. Instalación del módulo PAM para Google Authenticator
+#Contraseñas, MFA y privilegios justos
+
+##1. Instalación del módulo PAM para Google Authenticator
+
 Se instala el paquete libpam-google-authenticator en el sistema operativo mediante el gestor de paquetes de APT, el cual incorpora las librerías necesarias para integrar la validación de códigos de 6 tiempos en la pila de autenticación de Linux, con el comando:
 
 sudo apt install libpam-google-authenticator
 
-2. Generación del secreto TOTP por usuario
+##2. Generación del secreto TOTP por usuario
+
 Se ejecuta el asistente interactivo de configuración para el usuario, encargado de generar el secreto criptográfico único en base32 y el código QR asociado para su sincronización con la aplicación cliente (Google Authenticator), con el comando:
 
 sudo apt install libpam-google-authenticator
@@ -19,7 +23,7 @@ google-authenticator
 
 ¿Do you want to enable rate-limiting...? respondes y 
 
-3. Integración del módulo en la pila PAM de SSH
+##3. Integración del módulo en la pila PAM de SSH
 
 Para asegurar que el servicio de SSH procese la comprobación del segundo factor, se modifica el gestor de módulos de autenticación enchufables (PAM).
 Se editó el archivo de configuración:
