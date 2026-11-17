@@ -68,7 +68,7 @@
   4. Copiar el token que aparece en la parte superior de la página.
 
 **Paso 2 - Instalar acme.sh**
-* **Lectura del script:** Tras inspeccionar el script con less, hemos observado que la rutina automatizada crea los directorios ocultos (como ~/.acme.sh) e instala un trabajo/tarea automática utilizando cron (crontab) en el sistema para permitir la autogestión de los certificados.
+* **Lectura del script:** Tras inspeccionar el script con less, se observa que la rutina automatizada crea los directorios ocultos (como ~/.acme.sh) e instala un trabajo/tarea automática utilizando cron (crontab) en el sistema para permitir la autogestión de los certificados.
 
 **Paso 3 - Pedir el certificado (desafío DNS-01)**
 * **Pasos de acme.sh y su proceso:** Al lanzarlo, la terminal va mostrando cómo:
