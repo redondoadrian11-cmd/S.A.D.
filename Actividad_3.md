@@ -13,20 +13,20 @@
 
 ### 1.2 Paso a paso
 
-**Paso 0 - Instalar Apache y comprobar que funciona**
+**Paso 1 - Instalar Apache y comprobar que funciona**
 * **¿Qué indica el navegador sobre la seguridad de la conexión y por qué?:** El navegador indica "No seguro" porque la web se está sirviendo por HTTP en texto plano, sin cifrar. Cualquiera conectado a la red podría interceptar o modificar los paquetes en tránsito.
 
 **Paso 2 - Generar la clave privada de la CA**
 * **¿Por qué conviene proteger con contraseña la clave privada de una CA aunque esté en un directorio restrictivo?:** Porque es el elemento más crítico de la infraestructura. Si alguien lograra evadir los permisos del sistema (por ejemplo, mediante una escalada de privilegios o un robo físico del disco) y extrajera el archivo ca.key, la contraseña cifrada (con AES-256) actuaría como una barrera adicional. Sin ella, el atacante no podría usar la clave para emitir certificados falsos.
 
-**Paso 4 - Inspeccionar el certificado**
+**Paso 3 - Inspeccionar el certificado**
 * **¿Por qué coinciden Subject e Issuer?:** Porque se trata de un certificado de CA raíz autofirmado. Como no hay ninguna entidad jerárquicamente superior que avale a esta CA raíz, es ella misma (el Issuer) quien emite y firma el certificado de su propia identidad (el Subject).
 * **¿Hasta qué fecha es válida tu CA?:** Es válida durante 10 años (3650 días) desde el momento de su creación.
 
-**Paso 7 - La CA firma el certificado del servidor**
+**Paso 4 - La CA firma el certificado del servidor**
 * **¿Por qué el certificado del servidor dura 365 días y el de la CA 10 años?:** Los certificados raíz duran mucho tiempo porque renovarlos implica un coste administrativo muy alto (hay que re-distribuir la CA pública a todos los clientes del sistema para que sigan confiando). Los certificados de servidor duran poco (365 días) por seguridad: si la clave del servidor web se ve comprometida, el certificado fraudulento dejará de ser válido en poco tiempo.
 
-**Paso 8 - Verificar la cadena de confianza**
+**Paso 5 - Verificar la cadena de confianza**
 
   certs/srv.crt: OK
 
@@ -37,14 +37,14 @@
   X509v3 Subject Alternative Name: DNS:hmi.torrent.local, IP:IP_SERVIDOR
 
 
-**Paso 10 - Probar HTTPS desde la VM antes de confiar**
+**Paso 6 - Probar HTTPS desde la VM antes de confiar**
 * **Primer comando (curl -I https://IP_SERVIDOR):** Falla mostrando un error de validación (SSL certificate problem: unable to get local issuer certificate) porque curl revisa el almacén de entidades de confianza del sistema, y la CA que acabamos de inventar (Torrent S.L.) no se encuentra en él.
 * **Segundo comando (con --cacert):** Funciona y devuelve HTTP/1.1 200 OK porque al ejecutar el comando le pasamos explícitamente nuestro archivo ca.crt, indicándole a curl que debe confiar en esa CA concreta para esta conexión y así logra verificar la cadena de confianza.
 
-**Paso 11 - El navegador (advertencia y candado)**
+**Paso 7 - El navegador (advertencia y candado)**
 * **Emisor:** Quien aparece como emisor del certificado es "Torrent S.L. CA Raiz".
 
-**Paso 12 - Mirar la conexión TLS por dentro**
+**Paso 8 - Mirar la conexión TLS por dentro**
 * **TLS y Cifrado:** Se ha negociado la versión TLS 1.3 (o TLS 1.2 según tu SO) con un conjunto de cifrado avanzado (como por ejemplo TLS_AES_256_GCM_SHA384).
 * **Investigación (sin -CAfile):** Si omitimos la opción -CAfile ~/ca/certs/ca.crt, OpenSSL intentaría verificar el certificado contra las CAs públicas por defecto de Linux. Como no encontraría nuestra CA local, el "Verify return code" pasaría a ser un código de error de OpenSSL, habitualmente 21 (unable to verify the first certificate) o 19 (self signed certificate in certificate chain), indicando que no puede trazar la cadena de confianza.
 
