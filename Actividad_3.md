@@ -78,10 +78,7 @@
   4. Espera activamente unos segundos y Let's Encrypt valida leyendo los DNS públicos.
   5. Una vez verificado el control del dominio, Let's Encrypt emite, firma y nos entrega el certificado fullchain y la clave.
 
-**Paso 4 -Investigar CA de confianza**
-* **Investigación:** No, la CA local creada en la Parte 1 (Torrent S.L.) no figura en la carpeta predeterminada del sistema (/etc/ssl/certs), a menos que la hayamos instalado deliberadamente. Quien decide qué autoridades de certificación figuran como válidas de origen en esa ruta es el proveedor del sistema operativo (en distribuciones Debian/Ubuntu se gestionan mediante el paquete ca-certificates) o, en ocasiones, los propios fabricantes de navegadores, que traen su propio almacén preconfigurado (como Firefox).
-
-**Paso 5 - La renovación automática**
+**Paso 4 - La renovación automática**
 * **Caducidad y renovación:** El certificado en uso caduca a los 90 días exactos, pero la utilidad de cron intentará renovarlo automáticamente con un margen prudencial (habitualmente unos 30 días antes de su vencimiento) para prevenir incidencias.
 
 ---
