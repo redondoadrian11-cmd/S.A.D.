@@ -87,7 +87,7 @@
 
 | | **CA propia de Torrent S.L.** | **Let's Encrypt** |
 | :--- | :--- | :--- |
-| **¿Quién firma el certificado?** | Nosotros mismos con nuestra CA raíz autogestionada (Torrent S.L.). | Let's Encrypt Authority (CA pública de confianza). |
+| **¿Quién firma el certificado?** |  con la CA raíz autogestionada | Let's Encrypt Authority (CA pública de confianza). |
 | **¿El navegador lo acepta sin hacer nada?** | No. Da error SEC_ERROR_UNKNOWN_ISSUER. | Sí, lo valida transparentemente (candado verde). |
 | **¿Qué tuviste que hacer para que confiara?** | Importar el archivo ca.crt manualmente en las Autoridades de Firefox tras verificar el HASH. | Absolutamente nada. Su CA raíz ya viene en el sistema de fábrica. |
 | **Validez del certificado del servidor** | 365 días. | 90 días |
