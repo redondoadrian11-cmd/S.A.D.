@@ -65,6 +65,11 @@
 ### 2.2 Paso a paso
 
 **Paso 1 - Crear tu subdominio**
+* **Pasos
+  1. Entrar en [https://www.duckdns.org](https://www.duckdns.org) e iniciar sesión (por ejemplo, con GitHub).   
+  2. Crear un subdominio con un nombre único, en minúsculas y sin espacios (por ejemplo, torrent-tuapellido).   
+  3. Apuntar el subdominio a tu servidor escribiendo tu IP_SERVIDOR en el campo "current ip" y pulsando "update ip".   
+  4. Copiar el token que aparece en la parte superior de la página.
 
 **Paso 2 - Instalar acme.sh**
 * **Lectura del script:** Tras inspeccionar el script con less, hemos observado que la rutina automatizada crea los directorios ocultos (como ~/.acme.sh) e instala un trabajo/tarea automática utilizando cron (crontab) en el sistema para permitir la autogestión de los certificados.
