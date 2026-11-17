@@ -1,6 +1,4 @@
-# Memoria de Práctica: Certificados y HTTPS (UD3)
-**Alumno:** Daniel Legidos 
-**Módulo:** Seguridad y Alta Disponibilidad (0378) - 2º ASIX
+# Memoria de Práctica: Certificados y HTTPS 
 
 ---
 
