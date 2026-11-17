@@ -90,9 +90,9 @@
 | **¿Quién firma el certificado?** | Nosotros mismos con nuestra CA raíz autogestionada (Torrent S.L.). | Let's Encrypt Authority (CA pública de confianza). |
 | **¿El navegador lo acepta sin hacer nada?** | No. Da error SEC_ERROR_UNKNOWN_ISSUER. | Sí, lo valida transparentemente (candado verde). |
 | **¿Qué tuviste que hacer para que confiara?** | Importar el archivo ca.crt manualmente en las Autoridades de Firefox tras verificar el HASH. | Absolutamente nada. Su CA raíz ya viene en el sistema de fábrica. |
-| **Validez del certificado del servidor** | 365 días (1 año). | 90 días (poco tiempo). |
+| **Validez del certificado del servidor** | 365 días. | 90 días (poco tiempo). |
 | **Coste y esfuerzo de renovarlo** | Es gratis, pero costoso en esfuerzo humano (proceso de terminal y redistribución de CA). | Es gratis y de esfuerzo cero gracias a la automatización de herramientas como acme.sh y el servicio Cron. |
-| **¿Qué se comprueba antes de firmar?** | Nosotros mismos, no se exige validación pública. | Verifican tu propiedad y control absoluto sobre el nombre del dominio mediante desafíos HTTP-01 o DNS-01. |
+| **¿Qué se comprueba antes de firmar?** | No se exige validación pública. | Verifican tu propiedad y control absoluto sobre el nombre del dominio mediante desafíos HTTP-01 o DNS-01. |
 | **¿Valdría para un servidor sin Internet?** | Sí, la infraestructura puede aislarse 100% (ideal redes LAN e Intranets cerradas). | No. El servidor, incluso bajo desafío DNS-01, requiere salida a Internet para hacer la validación y descargar el certificado. |
 
 ---
