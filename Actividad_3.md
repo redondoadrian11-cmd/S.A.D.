@@ -66,8 +66,8 @@
 
 **Paso 1 - Crear tu subdominio**
 * **Pasos
-  1. Entrar en [https://www.duckdns.org](https://www.duckdns.org) e iniciar sesión (por ejemplo, con GitHub).   
-  2. Crear un subdominio con un nombre único, en minúsculas y sin espacios (por ejemplo, torrent-tuapellido).   
+  1. Entrar en [https://www.duckdns.org](https://www.duckdns.org) e iniciar sesión.   
+  2. Crear un subdominio con un nombre único, en minúsculas y sin espacios.   
   3. Apuntar el subdominio a tu servidor escribiendo tu IP_SERVIDOR en el campo "current ip" y pulsando "update ip".   
   4. Copiar el token que aparece en la parte superior de la página.
 
