@@ -1,7 +1,7 @@
 # Memoria de Práctica: Certificados y HTTPS 
 
 ## 0.1 Antes de empezar: qué necesitas
-* **Configuración de red elegida:** Configuración B (Dos adaptadores: Adaptador 1 en NAT para salida a Internet y adaptador 2 en "Solo anfitrión" para conexión desde el equipo anfitrión).
+* **Configuración de red elegida:** Dos adaptadores: Adaptador 1 en NAT para salida a Internet y adaptador 2 en Solo anfitrión.
 
 ---
 
